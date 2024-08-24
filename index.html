@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                clifford: '#daa73d',
+                'btnBgColor': '#ABEF5F',
               }
             }
           }
@@ -25,7 +26,79 @@
        <link rel="stylesheet" href="style.css">
        <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    
+<body class="bg-[#FFFFFF]">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-t from-[rgba(255,255,255,1)] to-[rgba(255,255,255,0)]" >
+      <nav class="md:container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start max-sm:w-full max-sm:justify-between">
+            <div class="dropdown max-sm:order-1 md:order-2 ">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 p-2 shadow max-sm:right-0">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex items-center md:order-0">
+              <a class="btn btn-circle bg-btnBgColor ">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </a>
+                <span class=" manrope font-extrabold text-[32px]">Rinterio</span>
+              </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 manrope text-[16px] text-[#737373] ">
+              <li class="bg-transparent hover:font-extrabold  hover:bg-transparent"><a>Home</a></li>
+              <li class=" hover:font-extrabold"><a>Services</a></li>
+              <li class=" hover:font-extrabold"><a>Portfolio</a></li>
+              <li class=" hover:font-extrabold"><a>Blogs</a></li>
+              <li class=" hover:font-extrabold"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end max-sm:hidden md:order-1">
+            <button class="btn btn-ghost btn-circle border-1 border-[#E9E9E9] bg-[#FFFFFF]">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-ghost btn-circle border-1 border-[#E9E9E9] bg-[#FFFFFF]">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+
+            <button class="btn bg-btnBgColor manrope rounded-[32px] font-extrabold text-[20px]">Book Consult
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-[#000000] p-2 rounded-full text-[16px] text-white"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="flex justify-center items-center flex-col text-center lg:px-24 max-sm:px-0 md:gap-6 max-sm:gap-4 py-[50px]">
+        <img src="images/banner.png" alt="banner" class="max-sm:w-64">
+        <h1 class="manrope font-extrabold lg:text-[64px] md:text-[36px] sm:text-[28px] text-[#212121] lg:px-24 md:px-16 max-sm:px-2">A barn house of this design has a striking appearance</h1>
+        <p class="manrope font-medium md:text-[16px] max-sm:text-[14px] text-[#494949] px-48 md:px-24 max-sm:px-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="btn bg-[rgba(171,239,95,0.5)] manrope rounded-[32px] font-bold text-[20px] md:text-[16px] text-[#212121]">View Details
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-2 rounded-full text-[16px] text-white"></i>
+        </button>
+      </div>
+    </header>
+
+
+    <!-- Main Section -->
+    <!-- Footer Section -->
 </body>
 </html>
